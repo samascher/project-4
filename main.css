@@ -3,14 +3,15 @@
 }
 
 body {
-  font-family: 'Open Sans', Sans-Serif;
-  font-size: 16px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 20px;
   color: #002f2f;
   background-color: #fcfcfc;
+  letter-spacing: 1.25px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Ubuntu', Sans-Serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 h1 {
@@ -44,14 +45,14 @@ a:hover {
 
 header {
   text-align: center;
-  background-image: url("images/IMG_5865.jpg");
+  background-image: url("images/fourteeners.png");
   background-size: cover;
   background-position: center center;
   padding: 70px;
 }
 
 header a {
-  color: white;
+  color: #00a3a3;
   text-shadow: 1px 1px 5px #808081;
 }
 
