@@ -9,7 +9,7 @@ Once on the mountain page, current weather is presented with the option to show 
 
 This project was built with HTML, CSS, JavaScript and jQuery. It uses the [Weatherbit.io API](https://www.weatherbit.io/api) to pull in the current weather and the forecasted weather. 
 
-trello board: https://trello.com/b/Xi2Cr86c/project-4-summited
+trello board: https://trello.com/b/Xi2Cr86c/project-4-summited<br />
 wireframe:<br />
 https://github.com/samascher/project-4/blob/master/wireframe1.JPG<br />
 https://github.com/samascher/project-4/blob/master/wireframe2.JPG
