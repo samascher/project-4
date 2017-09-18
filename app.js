@@ -474,11 +474,6 @@ const WEATHERBITAPI = {
   key: '4bf91204a99b46e29d407607f333f61c'
 }
 
-const FLICKRAPI = {
-  key: '3ea173e4864e55e1235e2d14e1d1c738',
-  secret: '2ef006fc397c6b82'
-}
-
 let URLparam = ''
 
 function getURLParameter () {
@@ -536,20 +531,6 @@ function getExtendedForecastFromAPI(mountain) {
   }
 
   $.getJSON('https://api.weatherbit.io/v2.0/forecast/daily', weatherParams, displayExtendedForecast)  
-}
-
-function getPhotosFromAPI(mountain) {
-  const photoParams = {
-    method: 'flickr.photos.search',
-    api_key: FLICKRAPI.key,
-    text: mountain.name,
-    format: 'json',
-    nojsoncallback: '1',
-    sort: 'relevance',
-    per_page: '20'
-  }
-
-  $.getJSON('https://api.flickr.com/services/rest/', photoParams, displayPhotos)
 }
 
 function displayMountainPageHeader(mountain) {
@@ -612,16 +593,6 @@ function displayExtendedForecast(data) {
   extendedForecastHTML += '</div>'
 
   $('.js-extended-forecast').append(extendedForecastHTML).show()
-}
-
-function displayPhotos(data) {
-  let photosHTML = ``
-
-  data.photos.photo.forEach(photo => {
-    photosHTML += `<a href="https://www.flickr.com/photos/${photo.owner}/${photo.id}" target="_blank"><img src="https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}_q.jpg" alt="${photo.title}"></a>`
-  })
-
-  $('.js-photos').html(photosHTML)
 }
 
 // collect list of mountain ranges to display mountains by range on the homepage
