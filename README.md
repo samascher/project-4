@@ -18,4 +18,4 @@ wireframe(s):<br />
 https://github.com/samascher/project-4/blob/master/wireframe1.JPG<br />
 https://github.com/samascher/project-4/blob/master/wireframe2.JPG<br />
 hosted:<br />
-http://www.purple-crack.surge.sh
+http://cowardly-farm.surge.sh/index.html?grays_peak
